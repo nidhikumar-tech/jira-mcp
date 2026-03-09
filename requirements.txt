@@ -1,0 +1,7 @@
+langchain
+langgraph
+google-generativeai
+python-dotenv
+mcp
+requests
+uv
