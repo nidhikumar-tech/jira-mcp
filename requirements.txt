@@ -1,7 +1,16 @@
-langchain
-langgraph
-google-generativeai
-python-dotenv
-mcp
-requests
-uv
+# --- AI Framework & Orchestration ---
+langchain>=1.0.0
+langgraph>=0.5.0
+langchain-core>=0.3.0
+
+# --- Model & Platform Integration ---
+langchain-google-genai>=4.0.0
+google-cloud-aiplatform>=1.80.0
+
+# --- MCP Tooling ---
+langchain-mcp-adapters>=0.2.0
+mcp>=1.2.0
+
+# --- Utilities ---
+python-dotenv>=1.0.1
+uv>=0.1.0
