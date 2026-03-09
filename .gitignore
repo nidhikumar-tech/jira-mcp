@@ -1,64 +1,32 @@
-# =========================
-# Python bytecode
-# =========================
+# --- Security & Credentials (CRITICAL) ---
+.env
+.env.local
+*.pem
+*.json
+# If you use a local service account key file for GCP
+gcp-key.json
+
+# --- Python & Environment ---
 __pycache__/
 *.py[cod]
 *$py.class
-
-# =========================
-# Virtual environments
-# =========================
-venv/
-.env/
-myenv/
 .venv/
-.env 
-
-# =========================
-# Environment variables / secrets
-# =========================
-.env
-.env.*
-*.env
-
-# =========================
-# VS Code
-# =========================
-.vscode/
-
-# =========================
-# Python build files
-# =========================
+venv/
+ENV/
 build/
 dist/
 *.egg-info/
-.eggs/
 
-# =========================
-# Logs
-# =========================
-*.log
-
-# =========================
-# Testing / coverage
-# =========================
-.coverage
-htmlcov/
-.pytest_cache/
-
-# =========================
-# OS files
-# =========================
-.DS_Store
-Thumbs.db
-
-# =========================
-# Jupyter
-# =========================
-.ipynb_checkpoints/
-
-# =========================
-# Temporary files
-# =========================
-*.tmp
+# --- IDE & Editors ---
+.vscode/
+.idea/
 *.swp
+*.swo
+.DS_Store
+
+# --- Project Specifics ---
+# Ignore the uvx cache if it's created locally
+.uv/
+# If you log tool outputs for debugging
+logs/
+*.log
